@@ -11,7 +11,7 @@ import (
 func InitRBAC() {
 }
 func InitRBACWithFile() {
-	//e, err := casbin.NewEnforcer("conf/model.conf", "conf/policy.csv")
+	//e, err := casbin.NewEnforcer("conf/rbac_model.conf", "conf/policy.csv")
 }
 func InitRBACWithAdapter() {
 	// 使用MySQL数据库初始化一个Xorm适配器

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package single;
+option go_package = "./single;single";
+service Greets {
+  rpc SayHello (HelloRequest) returns (HelloReply){}
+}
+message HelloRequest {
+  string name = 1;
+  string message = 2;
+}
+message HelloReply {
+  string name = 1;
+  string message = 2;
+}
